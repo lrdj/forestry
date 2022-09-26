@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <span class="govuk-caption-l">Licensee details</span>
+      <h1 class="govuk-fieldset__heading">
+        What is the licensee's address?
+      </h1>
+    </legend>
+
+    <div id="full-name-hint" class="govuk-hint">
+      The felling license will show record the full postal address of the licensee.
+    </div>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="address">
+    Full postal address
+  </label>
+  <textarea class="govuk-textarea" id="address" name="address" rows="5" autocomplete="street-address"></textarea>
+</div>
+
+  </fieldset>
+</div>
+
+
+<button onclick="location.href='/licensee-contact'" class="govuk-button" data-module="govuk-button">
+  Continue application
+</button>
+
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="xxxapp-related-items" role="complementary">
+
+{% include "includes/workflow-submenu.html" %}  
+
+      </aside>
+
+    </div>
+  </div>
+{% endblock %}
+
+

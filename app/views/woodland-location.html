@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <span class="govuk-caption-l">Details of the felling works</span>
+      <h1 class="govuk-fieldset__heading">
+        Details of the woodland to be felled
+      </h1>
+    </legend>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--m" for="wood-name">
+              The name of the woodland being felled
+            </label>
+              <div id="expiry-hint" class="govuk-hint">
+                The name that is either the agreed name in use in your community, or one that you will recognise as referring to this land. It will appear on your license.
+              </div>
+            <input class="govuk-input govuk-input--width-40" id="wood-name" name="wood-name" type="text" aria-describedby="passport-number-hint">
+          </div>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" role="group" aria-describedby="expiry-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                The postcode nearest to your proposed felling works
+              </legend>
+              <div id="expiry-hint" class="govuk-hint">
+                If the woodland area to fell is not assigned a postcode, enter the postcode of the nearest settlement
+              </div>
+              <input class="govuk-input govuk-input--width-10" id="postcode" name="postcode" type="text" autocomplete="postal-code">
+            </fieldset>
+          </div>
+
+<button onclick="location.href='/woodland-works'" class="govuk-button" data-module="govuk-button">
+  Continue application
+</button>
+
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="xxxapp-related-items" role="complementary">
+
+{% include "includes/workflow-submenu.html" %}  
+
+      </aside>
+
+    </div>
+  </div>
+{% endblock %}
+
+

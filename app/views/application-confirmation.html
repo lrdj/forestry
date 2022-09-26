@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <div class="govuk-panel govuk-panel--confirmation">
+          <h1 class="govuk-panel__title">
+            Felling license application complete
+          </h1>
+          <div class="govuk-panel__body">
+            Your reference number<br><strong>HDJ2123F</strong>
+          </div>
+        </div>
+
+        <p class="govuk-body">We have sent a confirmation email to ian.kilby@thethingthatiwant.com.</p>
+
+        <h2 class="govuk-heading-m">What happens next</h2>
+
+        <p class="govuk-body">
+          We’ve sent your application to the Forrestry commission office. They will contact you either to confirm your registration, or to ask for more information.
+        </p>
+
+        <p class="govuk-body">
+          You can help the forestry commission perform better oversight of land management in England by completing this short survey and telling us more about your woodland. You will have the option to specify the following items (takes 10 minutes)</p>
+
+<ul class="govuk-list">
+  <li>
+    <a class="govuk-link" href="#a">Give us details of your restocking plans</a>
+  </li>
+  <li>
+    <a class="govuk-link" href="#b">Draw a map of your woodland</a>
+  </li>
+  <li>
+    <a class="govuk-link" href="#c">Describe the species you are working with</a>
+  </li>
+  <li>
+    <a class="govuk-link" href="#d">Further details</a>
+  </li>
+</ul>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="xxxapp-related-items" role="complementary">
+
+{% include "includes/workflow-submenu.html" %}  
+
+      </aside>
+
+    </div>
+  </div>
+{% endblock %}
+
+

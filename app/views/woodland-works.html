@@ -1,0 +1,109 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <span class="govuk-caption-l">Details of the felling works</span>
+      <h1 class="govuk-fieldset__heading">
+        Your planned felling works
+      </h1>
+    </legend>
+
+    <p>
+      Help us understand your project. Please check any that describe your works.</p>
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+      <h1 class="govuk-fieldset__heading">
+        Your proposed operations
+      </h1>
+    </legend>
+    <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
+        <label class="govuk-label govuk-checkboxes__label" for="organisation">
+          Clear felling or felling a coppice
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+        <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
+          Felling individual trees
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="organisation-3" name="organisation" type="checkbox" value="MOD">
+        <label class="govuk-label govuk-checkboxes__label" for="organisation-3">
+          Felling to create open space
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="organisation-4" name="organisation" type="checkbox" value="DfT">
+        <label class="govuk-label govuk-checkboxes__label" for="organisation-4">
+          Thinning
+        </label>
+      </div>
+    </div>
+
+  </fieldset>
+</div>
+
+<!--
+Clear felling
+Deforestation
+Felling a coppice
+Felling individual trees
+Felling to create open space
+Regenerative felling
+Thinning
+-->
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+      <h1 class="govuk-fieldset__heading">
+        Your estimate of the overall quantity of timber
+      </h1>
+    </legend>
+
+  <label class="govuk-label" for="width-10">
+    Please indicate the aproximate size in hectares of the area to be felled
+  </label>
+  <input class="govuk-input govuk-input--width-10" id="area" name="area" type="text" aria-describedby="area-hint">
+
+<p><br/>or</p>
+
+  <label class="govuk-label" for="width-10">
+    The aproximate number of trees to be removed
+  </label>
+  <input class="govuk-input govuk-input--width-10" id="mass" name="mass" type="text" aria-describedby="mass-hint">
+
+
+
+  </fieldset>
+</div>
+
+
+<button onclick="location.href='/woodland-works-dates'" class="govuk-button" data-module="govuk-button">
+  Continue application
+</button>
+
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="xxxapp-related-items" role="complementary">
+
+{% include "includes/workflow-submenu.html" %}  
+
+      </aside>
+
+    </div>
+  </div>
+{% endblock %}
+
+

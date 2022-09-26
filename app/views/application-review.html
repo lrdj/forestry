@@ -1,0 +1,194 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <span class="govuk-caption-l">Application submission</span>
+      <h1 class="govuk-fieldset__heading">
+        Check your answers before sending your application
+      </h1>
+    </legend>
+
+        <h2 class="govuk-heading-m"><br>Licensee details</h2>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Full name of licensee
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Mr Ian Kilby
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="/licensee-name">
+                Change<span class="govuk-visually-hidden"> full name</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Full postal address
+            </dt>
+            <dd class="govuk-summary-list__value">
+              2 Spanish Battery<br>
+              North Shields<br>
+              NE30 4DB
+             </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="/licensee-address">
+                Change<span class="govuk-visually-hidden"> postal address</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Preferred contact method
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Email
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="/licensee-contact">
+                Change<span class="govuk-visually-hidden"> preferred contact</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+
+        <h2 class="govuk-heading-m">Felling works</h2>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Name of woodland
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Top half of north field behind M63 turn-off northbound
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="/woodland-location">
+                Change<span class="govuk-visually-hidden"> name of woodland</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Assigned postcode or nearest settlement
+            </dt>
+            <dd class="govuk-summary-list__value">
+              NE20 9BD
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="/woodland-location#postcode">
+                Change<span class="govuk-visually-hidden"> postcode</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Proposed operations
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Felling to create open space
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="/woodland-works">
+                Change<span class="govuk-visually-hidden"> operations</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Quantity of timber
+            </dt>
+            <dd class="govuk-summary-list__value">
+              600 ha (aprox 340 trees)
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="/woodland-works#mass">
+                Change<span class="govuk-visually-hidden"> timber quantity</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Start date
+            </dt>
+            <dd class="govuk-summary-list__value">
+              5 December 2022
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="/woodland-works-dates">
+                Change<span class="govuk-visually-hidden"> start date</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Completion date
+            </dt>
+            <dd class="govuk-summary-list__value">
+              31 March 2023
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="/woodland-works-dates">
+                Change<span class="govuk-visually-hidden"> completion date</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+
+
+        <h2 class="govuk-heading-m">Declarations</h2>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Works will comply
+            </dt>
+            <dd class="govuk-summary-list__value">
+              l declare that all works covered by this license will comply with any covenants or restrictions in place
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="/application-declaration">
+                Change<span class="govuk-visually-hidden"> declaration</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Understand licensee responsibilities
+            </dt>
+            <dd class="govuk-summary-list__value">
+              l understand and accept my responsibilities as the licensee
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="/application-declaration#organisation-2">
+                Change<span class="govuk-visually-hidden"> responsibilities</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+
+        <button onclick="location.href='/application-confirmation'" class="govuk-button" data-module="govuk-button">
+          Submit your application
+        </button>
+
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="xxxapp-related-items" role="complementary">
+
+{% include "includes/workflow-submenu.html" %}  
+
+      </aside>
+
+    </div>
+  </div>
+{% endblock %}
+
+

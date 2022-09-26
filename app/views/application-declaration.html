@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <span class="govuk-caption-l">Declarations of conformity</span>
+      <h1 class="govuk-fieldset__heading">
+        Confirm your works will be compliant
+      </h1>
+    </legend>
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend">
+By selecting the options below and submiting this application, you confirm that you understand, and will comply with, the terms of any tree preservation orders (TPO) or conservation area covenants (CA) that may apply to the land being felled.
+
+You confirm that you understand your responsibilities under the law.
+    </legend>
+    <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
+        <label class="govuk-label govuk-checkboxes__label" for="organisation">
+          l declare that all works covered by this license will comply with any covenants or restrictions in place
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="organisation-2" name="organisation-2" type="checkbox" value="employment-tribunal">
+        <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
+          l understand and accept my responsibilities as the licensee
+        </label>
+      </div>
+    </div>
+
+  </fieldset>
+</div>
+
+
+<button onclick="location.href='/application-review'" class="govuk-button" data-module="govuk-button">
+  I confirm my works will be compliant
+</button>
+
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="xxxapp-related-items" role="complementary">
+
+{% include "includes/workflow-submenu.html" %}  
+
+      </aside>
+
+    </div>
+  </div>
+{% endblock %}
+
+

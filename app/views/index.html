@@ -1,0 +1,58 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Apply for a felling license
+{% endblock %}
+
+
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+
+      <h1 class="govuk-heading-xl">
+        Apply for a felling license
+        <span class="govuk-caption-xl">Alpha.01</span>
+      </h1>{{releaseVersion | log }}
+
+      <p class="govuk-body-l">
+        Use this service to apply for a license to fell trees. 
+      </p>
+
+      <p>
+        Becoming licensed will ensure the correct authorities are notified of your upcoming woodland management works. The following pages will guide you through the steps to apply for your license
+      </p>
+
+      <a href="/licensee-name" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
+        Get started
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+        </svg>
+      </a>
+
+      <h2 class="govuk-heading-m">Before you start</h2>
+
+<p class="govuk-body">You should have certain information to hand before you start:</p>
+<ul class="govuk-list govuk-list--bullet">
+  <li>how much wood you will be removing</li>
+  <li>the location where you will be felling</li>
+  <li>the approximate dates of your works</li>
+</ul>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="xxxapp-related-items" role="complementary">
+
+{% include "includes/workflow-submenu-start.html" %}  
+
+      </aside>
+
+    </div>
+  </div>
+{% endblock %}
+
