@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: forestry
+    env: node
+    branch: main
+    autoDeploy: true
+    buildCommand: npm ci
+    startCommand: npm run start
+    healthCheckPath: /
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
+      # Optionally pin Node to a stable version Render supports
+      - key: NODE_VERSION
+        value: 20
+
