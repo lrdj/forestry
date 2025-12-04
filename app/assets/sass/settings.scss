@@ -1,0 +1,7 @@
+// Loaded early by the Prototype Kit before govuk-frontend
+// Suppress deprecation warnings for the legacy colour param
+// See: node_modules/govuk-frontend/dist/govuk/helpers/_colour.scss
+$govuk-suppressed-warnings: (
+  legacy-colour-param: true
+);
+
