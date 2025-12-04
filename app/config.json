@@ -1,1 +1,8 @@
-{"serviceName":"Apply for a felling license"}
+{
+  "serviceName": "Apply for a felling license",
+  "plugins": {
+    "govuk-frontend": {
+      "rebrand": true
+    }
+  }
+}
