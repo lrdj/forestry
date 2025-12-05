@@ -1,0 +1,134 @@
+{% extends "hmrc/layouts/account-header.html" %}
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Profile and settings – Personal tax account – GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Profile and settings</h1>
+
+    <!-- Profile section -->
+    <h2 class="govuk-heading-m">Profile</h2>
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-6">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Name</dt>
+        <dd class="govuk-summary-list__value">Douglas Falby</dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> name</span>
+          </a>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">National Insurance</dt>
+        <dd class="govuk-summary-list__value">
+          NZ 71 47 54 D<br>
+          <a class="govuk-link" href="#">
+            View National Insurance letter
+          </a>
+        </dd>
+        <dd class="govuk-summary-list__actions"></dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Main address</dt>
+        <dd class="govuk-summary-list__value">
+          1 Larch Crescent<br>
+          Doune<br>
+          FK16 6JA
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> main address</span>
+          </a>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Postal address</dt>
+        <dd class="govuk-summary-list__value">
+          1 Larch Crescent<br>
+          Doune<br>
+          FK16 6JA<br>
+          All letters will be sent to this address.
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> postal address</span>
+          </a>
+        </dd>
+      </div>
+    </dl>
+
+    <!-- Settings section -->
+    <h2 class="govuk-heading-m">Settings</h2>
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-6">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Contact preferences</dt>
+        <dd class="govuk-summary-list__value">
+          Online, we will email you
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> contact preferences</span>
+          </a>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Sign-in details</dt>
+        <dd class="govuk-summary-list__value">
+          Sign in to HMRC online services
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> sign-in details</span>
+          </a>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Trusted Helpers contacts</dt>
+        <dd class="govuk-summary-list__value">
+          Ask for help from family or friends and manage contacts.
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Manage<span class="govuk-visually-hidden"> Trusted Helpers contacts</span>
+          </a>
+        </dd>
+      </div>
+    </dl>
+
+    <p class="govuk-body">
+      <a class="govuk-link" href="#" target="_blank" rel="noreferrer noopener">
+        Is this page not working properly? (opens in new tab)
+      </a>
+    </p>
+
+    <div class="govuk-phase-banner govuk-!-margin-top-6">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your
+          <a class="govuk-link" href="#">feedback</a>
+          will help us to improve it.
+        </span>
+      </p>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
+

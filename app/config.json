@@ -1,5 +1,5 @@
 {
-  "serviceName": "Apply for a felling license",
+  "serviceName": "Personal Tax Account",
   "plugins": {
     "govuk-frontend": {
       "rebrand": true
